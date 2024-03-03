@@ -9,9 +9,6 @@ terraform {
 
 provider "aws" {
   region     = "us-east-1"
-  shared_config_files = ["/Users/prashantjha/.aws/config"]
-  shared_credentials_files = ["/Users/prashantjha/.aws/credentials"]
-  profile = "learning-account"
 }
 
 resource "aws_instance" "myec2" {
